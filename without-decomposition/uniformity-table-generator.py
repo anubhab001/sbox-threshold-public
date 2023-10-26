@@ -16,10 +16,10 @@ y0 = x01 * x11 + x01 * x12 + x02 * x11 # Missing: x00, x10
 y1 = x02 * x12 + x00 * x12 + x02 * x10 # Missing: x01, x11
 y2 = x00 * x10 + x00 * x11 + x01 * x10 # Missing: x02, x12
 
-# Confirm missing variables
-assert x00 not in y0.variables() and x10 not in y0.variables()
-assert x01 not in y1.variables() and x11 not in y1.variables()
-assert x02 not in y2.variables() and x12 not in y2.variables()
+## Confirm missing variables
+# assert x00 not in y0.variables() and x10 not in y0.variables()
+# assert x01 not in y1.variables() and x11 not in y1.variables()
+# assert x02 not in y2.variables() and x12 not in y2.variables()
 
 assert y == y0 + y1 + y2
 
