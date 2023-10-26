@@ -1,0 +1,449 @@
+==========================================================
+Start: 2023-10-26_01:52:31	Host: TL-HA-22
+SBox = (0, 3, 2, 1, 4, 7, 5, 6)
+Shares = 3 (TI order = 1)
+------------------------------------------
+	Coordinate index: 0
+	Output variables (before and after sharing): y0 = y0_0 + y0_1 + y0_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y0 = x0 + x1*x2
+	Target coordinate function (after sharing): y0_0 + y0_1 + y0_2 = x0_0 + x0_1 + x0_2 + x1_0*x2_0 + x1_0*x2_1 + x1_0*x2_2 + x1_1*x2_0 + x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_0 + x1_2*x2_1 + x1_2*x2_2
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2]]
+	Current sharing: [x0_2 + x1_1*x2_2 + x1_2*x2_1 + x1_2*x2_2, x0_0 + x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0, x0_1 + x1_0*x2_1 + x1_1*x2_0 + x1_1*x2_1].	Uniformity check 1. Success {16}
+"Correctness" satisfied
+"Non-completeness" satisfied
+y0_0 = x0_2 + x1_1*x2_2 + x1_2*x2_1 + x1_2*x2_2
+y0_1 = x0_0 + x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0
+y0_2 = x0_1 + x1_0*x2_1 + x1_1*x2_0 + x1_1*x2_1
+------------------------------------------
+	Coordinate index: 1
+	Output variables (before and after sharing): y1 = y1_0 + y1_1 + y1_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y1 = x0 + x1*x2 + x1
+	Target coordinate function (after sharing): y1_0 + y1_1 + y1_2 = x0_0 + x0_1 + x0_2 + x1_0*x2_0 + x1_0*x2_1 + x1_0*x2_2 + x1_0 + x1_1*x2_0 + x1_1*x2_1 + x1_1*x2_2 + x1_1 + x1_2*x2_0 + x1_2*x2_1 + x1_2*x2_2 + x1_2
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2]]
+	Current sharing: [x0_2 + x1_1*x2_2 + x1_1 + x1_2*x2_1 + x1_2, x0_0 + x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0 + x1_2*x2_2, x0_1 + x1_0*x2_1 + x1_0 + x1_1*x2_0 + x1_1*x2_1].	Uniformity check 1. Success {16}
+"Correctness" satisfied
+"Non-completeness" satisfied
+y1_0 = x0_2 + x1_1*x2_2 + x1_1 + x1_2*x2_1 + x1_2
+y1_1 = x0_0 + x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0 + x1_2*x2_2
+y1_2 = x0_1 + x1_0*x2_1 + x1_0 + x1_1*x2_0 + x1_1*x2_1
+------------------------------------------
+	Coordinate index: 2
+	Output variables (before and after sharing): y2 = y2_0 + y2_1 + y2_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y2 = x2
+	Target coordinate function (after sharing): y2_0 + y2_1 + y2_2 = x2_0 + x2_1 + x2_2
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2]]
+	Current sharing: [x2_2, x2_0, x2_1].	Uniformity check 1. Success {16}
+"Correctness" satisfied
+"Non-completeness" satisfied
+y2_0 = x2_2
+y2_1 = x2_0
+y2_2 = x2_1
+
+
+==========================================================
+Start: 2023-10-26_01:53:42	Host: TL-HA-22
+SBox = (0, 3, 2, 1, 4, 7, 5, 6)
+Shares = 3 (TI order = 1)
+------------------------------------------
+	Coordinate index: 0
+	Output variables (before and after sharing): y0 = y0_0 + y0_1 + y0_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y0 = x0 + x1*x2
+	Target coordinate function (after sharing): y0_0 + y0_1 + y0_2 = x0_0 + x0_1 + x0_2 + x1_0*x2_0 + x1_0*x2_1 + x1_0*x2_2 + x1_1*x2_0 + x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_0 + x1_2*x2_1 + x1_2*x2_2
+---------------------
+	Conflicting: [[x0_2, x1_2, x2_2], [x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1]]
+	Current sharing: [x0_0 + x1_0*x2_0 + x1_0*x2_1 + x1_1*x2_0 + x1_1*x2_1, x0_1 + x1_1*x2_2 + x1_2*x2_1 + x1_2*x2_2, x0_2 + x1_0*x2_2 + x1_2*x2_0].	Uniformity check 1. Success {16}
+"Correctness" satisfied
+"Non-completeness" satisfied
+y0_0 = x0_0 + x1_0*x2_0 + x1_0*x2_1 + x1_1*x2_0 + x1_1*x2_1
+y0_1 = x0_1 + x1_1*x2_2 + x1_2*x2_1 + x1_2*x2_2
+y0_2 = x0_2 + x1_0*x2_2 + x1_2*x2_0
+------------------------------------------
+	Coordinate index: 1
+	Output variables (before and after sharing): y1 = y1_0 + y1_1 + y1_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y1 = x0 + x1*x2 + x1
+	Target coordinate function (after sharing): y1_0 + y1_1 + y1_2 = x0_0 + x0_1 + x0_2 + x1_0*x2_0 + x1_0*x2_1 + x1_0*x2_2 + x1_0 + x1_1*x2_0 + x1_1*x2_1 + x1_1*x2_2 + x1_1 + x1_2*x2_0 + x1_2*x2_1 + x1_2*x2_2 + x1_2
+---------------------
+	Conflicting: [[x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2], [x0_0, x1_0, x2_0]]
+	Current sharing: [x0_2 + x1_0*x2_2 + x1_0 + x1_2*x2_0, x0_0 + x0_1 + x1_0*x2_0 + x1_0*x2_1 + x1_1*x2_0 + x1_1*x2_1, x1_1*x2_2 + x1_1 + x1_2*x2_1 + x1_2*x2_2 + x1_2].	Uniformity check 1. Failure (0, 0, 0) : {20, 12} {(0, 0, 0): {(0, 0, 0): 20, (0, 1, 1): 12, (1, 1, 0): 20, (1, 0, 1): 12}}
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_2, x1_2, x2_2], [x0_1, x1_1, x2_1]]
+	Current sharing: [x0_1 + x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_1, x0_0 + x1_0*x2_1 + x1_0 + x1_1*x2_0 + x1_1, x0_2 + x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0 + x1_2*x2_2 + x1_2].	Uniformity check 2. Success {16}
+"Correctness" satisfied
+"Non-completeness" satisfied
+y1_0 = x0_1 + x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_1
+y1_1 = x0_0 + x1_0*x2_1 + x1_0 + x1_1*x2_0 + x1_1
+y1_2 = x0_2 + x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0 + x1_2*x2_2 + x1_2
+------------------------------------------
+	Coordinate index: 2
+	Output variables (before and after sharing): y2 = y2_0 + y2_1 + y2_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y2 = x2
+	Target coordinate function (after sharing): y2_0 + y2_1 + y2_2 = x2_0 + x2_1 + x2_2
+---------------------
+	Conflicting: [[x0_1, x1_1, x2_1], [x0_0, x1_0, x2_0], [x0_2, x1_2, x2_2]]
+	Current sharing: [x2_0, x2_1 + x2_2, 0].	Uniformity check 1. Success {32}
+"Correctness" satisfied
+"Non-completeness" satisfied
+y2_0 = x2_0
+y2_1 = x2_1 + x2_2
+y2_2 = 0 (zero sharing)
+
+
+==========================================================
+Start: 2023-10-26_01:58:52	Host: TL-HA-22
+SBox = (0, 3, 2, 1, 4, 7, 5, 6)
+Shares = 3 (TI order = 1)
+------------------------------------------
+	Coordinate index: 0
+	Output variables (before and after sharing): y0 = y0_0 + y0_1 + y0_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y0 = x0 + x1*x2
+	Target coordinate function (after sharing): y0_0 + y0_1 + y0_2 = x0_0 + x0_1 + x0_2 + x1_0*x2_0 + x1_0*x2_1 + x1_0*x2_2 + x1_1*x2_0 + x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_0 + x1_2*x2_1 + x1_2*x2_2
+---------------------
+	Conflicting: [[x0_2, x1_2, x2_2], [x0_1, x1_1, x2_1], [x0_0, x1_0, x2_0]]
+	Current sharing: [x0_0 + x1_0*x2_1 + x1_1*x2_0, x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0 + x1_2*x2_2, x0_1 + x0_2 + x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_1].	Uniformity check 1. Failure (0, 0, 0) : {24, 8} {(0, 0, 0): {(0, 0, 0): 24, (0, 1, 1): 8, (1, 0, 1): 24, (1, 1, 0): 8}}
+	Conflicting: [[x0_2, x1_2, x2_2], [x0_1, x1_1, x2_1], [x0_0, x1_0, x2_0]]
+	Current sharing: [x0_0 + x1_0*x2_1 + x1_1*x2_0 + x1_1*x2_1, x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0, x0_1 + x0_2 + x1_1*x2_2 + x1_2*x2_1 + x1_2*x2_2].	Uniformity check 2. Failure (0, 0, 0) : {20, 12} {(0, 0, 0): {(0, 0, 0): 20, (1, 0, 1): 20, (1, 1, 0): 12, (0, 1, 1): 12}}
+	Conflicting: [[x0_1, x1_1, x2_1], [x0_0, x1_0, x2_0], [x0_2, x1_2, x2_2]]
+	Current sharing: [x0_0 + x0_2 + x1_0*x2_2 + x1_2*x2_0, x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_1 + x1_2*x2_2, x0_1 + x1_0*x2_0 + x1_0*x2_1 + x1_1*x2_0].	Uniformity check 3. Failure (0, 0, 0) : {24, 8} {(0, 0, 0): {(0, 0, 0): 24, (1, 0, 1): 24, (0, 1, 1): 8, (1, 1, 0): 8}}
+	Conflicting: [[x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2], [x0_0, x1_0, x2_0]]
+	Current sharing: [x0_0 + x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0, x0_1 + x1_0*x2_1 + x1_1*x2_0, x0_2 + x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_1 + x1_2*x2_2].	Uniformity check 4. Success {16}
+"Correctness" satisfied
+"Non-completeness" satisfied
+y0_0 = x0_0 + x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0
+y0_1 = x0_1 + x1_0*x2_1 + x1_1*x2_0
+y0_2 = x0_2 + x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_1 + x1_2*x2_2
+------------------------------------------
+	Coordinate index: 1
+	Output variables (before and after sharing): y1 = y1_0 + y1_1 + y1_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y1 = x0 + x1*x2 + x1
+	Target coordinate function (after sharing): y1_0 + y1_1 + y1_2 = x0_0 + x0_1 + x0_2 + x1_0*x2_0 + x1_0*x2_1 + x1_0*x2_2 + x1_0 + x1_1*x2_0 + x1_1*x2_1 + x1_1*x2_2 + x1_1 + x1_2*x2_0 + x1_2*x2_1 + x1_2*x2_2 + x1_2
+---------------------
+	Conflicting: [[x0_1, x1_1, x2_1], [x0_0, x1_0, x2_0], [x0_2, x1_2, x2_2]]
+	Current sharing: [x0_2 + x1_0*x2_0 + x1_0*x2_2 + x1_0 + x1_2*x2_0 + x1_2, x1_1*x2_2 + x1_1 + x1_2*x2_1 + x1_2*x2_2, x0_0 + x0_1 + x1_0*x2_1 + x1_1*x2_0 + x1_1*x2_1].	Uniformity check 1. Failure (0, 0, 0) : {20, 12} {(0, 0, 0): {(0, 0, 0): 20, (1, 1, 0): 12, (1, 0, 1): 20, (0, 1, 1): 12}}
+	Conflicting: [[x0_2, x1_2, x2_2], [x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1]]
+	Current sharing: [x0_0 + x0_1 + x1_0*x2_1 + x1_0 + x1_1*x2_0, x1_1*x2_1 + x1_1*x2_2 + x1_1 + x1_2*x2_1 + x1_2, x0_2 + x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0 + x1_2*x2_2].	Uniformity check 2. Failure (0, 0, 0) : {20, 12} {(0, 0, 0): {(0, 0, 0): 20, (0, 1, 1): 12, (1, 1, 0): 12, (1, 0, 1): 20}}
+	Conflicting: [[x0_2, x1_2, x2_2], [x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1]]
+	Current sharing: [x0_1 + x1_0*x2_1 + x1_1*x2_0 + x1_1*x2_1, x1_1*x2_2 + x1_1 + x1_2*x2_1 + x1_2*x2_2 + x1_2, x0_0 + x0_2 + x1_0*x2_0 + x1_0*x2_2 + x1_0 + x1_2*x2_0].	Uniformity check 3. Failure (0, 0, 0) : {20, 12} {(0, 0, 0): {(0, 0, 0): 20, (1, 1, 0): 12, (1, 0, 1): 20, (0, 1, 1): 12}}
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_2, x1_2, x2_2], [x0_1, x1_1, x2_1]]
+	Current sharing: [x1_1*x2_1 + x1_1*x2_2 + x1_1 + x1_2*x2_1 + x1_2*x2_2, x0_1 + x1_0*x2_1 + x1_0 + x1_1*x2_0, x0_0 + x0_2 + x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0 + x1_2].	Uniformity check 4. Success {16}
+"Correctness" satisfied
+"Non-completeness" satisfied
+y1_0 = x1_1*x2_1 + x1_1*x2_2 + x1_1 + x1_2*x2_1 + x1_2*x2_2
+y1_1 = x0_1 + x1_0*x2_1 + x1_0 + x1_1*x2_0
+y1_2 = x0_0 + x0_2 + x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0 + x1_2
+------------------------------------------
+	Coordinate index: 2
+	Output variables (before and after sharing): y2 = y2_0 + y2_1 + y2_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y2 = x2
+	Target coordinate function (after sharing): y2_0 + y2_1 + y2_2 = x2_0 + x2_1 + x2_2
+---------------------
+	Conflicting: [[x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2], [x0_0, x1_0, x2_0]]
+	Current sharing: [x2_2, x2_0, x2_1].	Uniformity check 1. Success {16}
+"Correctness" satisfied
+"Non-completeness" satisfied
+y2_0 = x2_2
+y2_1 = x2_0
+y2_2 = x2_1
+
+
+==========================================================
+Start: 2023-10-26_02:19:43	Host: TL-HA-22
+SBox = (0, 3, 2, 1, 4, 7, 5, 6)
+Shares = 3 (TI order = 1)
+------------------------------------------
+	Coordinate index: 0
+	Output variables (before and after sharing): y0 = y0_0 + y0_1 + y0_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y0 = x0 + x1*x2
+	Target coordinate function (after sharing): y0_0 + y0_1 + y0_2 = x0_0 + x0_1 + x0_2 + x1_0*x2_0 + x1_0*x2_1 + x1_0*x2_2 + x1_1*x2_0 + x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_0 + x1_2*x2_1 + x1_2*x2_2
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2]]
+	Current sharing: [x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_1 + x1_2*x2_2, x0_0 + x0_2 + x1_0*x2_2 + x1_2*x2_0, x0_1 + x1_0*x2_0 + x1_0*x2_1 + x1_1*x2_0].
+"Correctness" satisfied
+"Non-completeness" satisfied
+y0_0 = x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_1 + x1_2*x2_2
+y0_1 = x0_0 + x0_2 + x1_0*x2_2 + x1_2*x2_0
+y0_2 = x0_1 + x1_0*x2_0 + x1_0*x2_1 + x1_1*x2_0
+------------------------------------------
+	Coordinate index: 1
+	Output variables (before and after sharing): y1 = y1_0 + y1_1 + y1_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y1 = x0 + x1*x2 + x1
+	Target coordinate function (after sharing): y1_0 + y1_1 + y1_2 = x0_0 + x0_1 + x0_2 + x1_0*x2_0 + x1_0*x2_1 + x1_0*x2_2 + x1_0 + x1_1*x2_0 + x1_1*x2_1 + x1_1*x2_2 + x1_1 + x1_2*x2_0 + x1_2*x2_1 + x1_2*x2_2 + x1_2
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2]]
+	Current sharing: [x0_2 + x1_1*x2_2 + x1_2*x2_1, x1_0*x2_2 + x1_2*x2_0 + x1_2*x2_2 + x1_2, x0_0 + x0_1 + x1_0*x2_0 + x1_0*x2_1 + x1_0 + x1_1*x2_0 + x1_1*x2_1 + x1_1].
+"Correctness" satisfied
+"Non-completeness" satisfied
+y1_0 = x0_2 + x1_1*x2_2 + x1_2*x2_1
+y1_1 = x1_0*x2_2 + x1_2*x2_0 + x1_2*x2_2 + x1_2
+y1_2 = x0_0 + x0_1 + x1_0*x2_0 + x1_0*x2_1 + x1_0 + x1_1*x2_0 + x1_1*x2_1 + x1_1
+------------------------------------------
+	Coordinate index: 2
+	Output variables (before and after sharing): y2 = y2_0 + y2_1 + y2_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y2 = x2
+	Target coordinate function (after sharing): y2_0 + y2_1 + y2_2 = x2_0 + x2_1 + x2_2
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2]]
+	Current sharing: [x2_2, x2_0, x2_1].
+"Correctness" satisfied
+"Non-completeness" satisfied
+y2_0 = x2_2
+y2_1 = x2_0
+y2_2 = x2_1
+
+
+==========================================================
+Start: 2023-10-26_03:17:57	Host: TL-HA-22
+SBox = (0, 3, 2, 1, 4, 7, 5, 6)
+Shares = 3 (TI order = 1)
+------------------------------------------
+	Coordinate index: 0
+	Output variables (before and after sharing): y0 = y0_0 + y0_1 + y0_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y0 = x0 + x1*x2
+	Target coordinate function (after sharing): y0_0 + y0_1 + y0_2 = x0_0 + x0_1 + x0_2 + x1_0*x2_0 + x1_0*x2_1 + x1_0*x2_2 + x1_1*x2_0 + x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_0 + x1_2*x2_1 + x1_2*x2_2
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2]]
+	Current sharing: [x0_2 + x1_1*x2_2 + x1_2*x2_1 + x1_2*x2_2, x0_0 + x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0, x0_1 + x1_0*x2_1 + x1_1*x2_0 + x1_1*x2_1].
+"Correctness" satisfied
+"Non-completeness" satisfied
+y0_0 = x0_2 + x1_1*x2_2 + x1_2*x2_1 + x1_2*x2_2
+y0_1 = x0_0 + x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0
+y0_2 = x0_1 + x1_0*x2_1 + x1_1*x2_0 + x1_1*x2_1
+------------------------------------------
+	Coordinate index: 1
+	Output variables (before and after sharing): y1 = y1_0 + y1_1 + y1_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y1 = x0 + x1*x2 + x1
+	Target coordinate function (after sharing): y1_0 + y1_1 + y1_2 = x0_0 + x0_1 + x0_2 + x1_0*x2_0 + x1_0*x2_1 + x1_0*x2_2 + x1_0 + x1_1*x2_0 + x1_1*x2_1 + x1_1*x2_2 + x1_1 + x1_2*x2_0 + x1_2*x2_1 + x1_2*x2_2 + x1_2
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2]]
+	Current sharing: [x1_1*x2_2 + x1_1 + x1_2*x2_1 + x1_2, x0_2 + x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0 + x1_2*x2_2, x0_0 + x0_1 + x1_0*x2_1 + x1_0 + x1_1*x2_0 + x1_1*x2_1].
+"Correctness" satisfied
+"Non-completeness" satisfied
+y1_0 = x1_1*x2_2 + x1_1 + x1_2*x2_1 + x1_2
+y1_1 = x0_2 + x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0 + x1_2*x2_2
+y1_2 = x0_0 + x0_1 + x1_0*x2_1 + x1_0 + x1_1*x2_0 + x1_1*x2_1
+------------------------------------------
+	Coordinate index: 2
+	Output variables (before and after sharing): y2 = y2_0 + y2_1 + y2_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y2 = x2
+	Target coordinate function (after sharing): y2_0 + y2_1 + y2_2 = x2_0 + x2_1 + x2_2
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2]]
+	Current sharing: [x2_2, x2_0, x2_1].
+"Correctness" satisfied
+"Non-completeness" satisfied
+y2_0 = x2_2
+y2_1 = x2_0
+y2_2 = x2_1
+
+
+==========================================================
+Start: 2023-10-26_03:18:50	Host: TL-HA-22
+SBox = (0, 3, 2, 1, 4, 7, 5, 6)
+Shares = 3 (TI order = 1)
+------------------------------------------
+	Coordinate index: 0
+	Output variables (before and after sharing): y0 = y0_0 + y0_1 + y0_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y0 = x0 + x1*x2
+	Target coordinate function (after sharing): y0_0 + y0_1 + y0_2 = x0_0 + x0_1 + x0_2 + x1_0*x2_0 + x1_0*x2_1 + x1_0*x2_2 + x1_1*x2_0 + x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_0 + x1_2*x2_1 + x1_2*x2_2
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2]]
+	Current sharing: [x0_2 + x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_1, x0_0 + x1_0*x2_2 + x1_2*x2_0 + x1_2*x2_2, x0_1 + x1_0*x2_0 + x1_0*x2_1 + x1_1*x2_0].
+"Correctness" satisfied
+"Non-completeness" satisfied
+y0_0 = x0_2 + x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_1
+y0_1 = x0_0 + x1_0*x2_2 + x1_2*x2_0 + x1_2*x2_2
+y0_2 = x0_1 + x1_0*x2_0 + x1_0*x2_1 + x1_1*x2_0
+------------------------------------------
+	Coordinate index: 1
+	Output variables (before and after sharing): y1 = y1_0 + y1_1 + y1_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y1 = x0 + x1*x2 + x1
+	Target coordinate function (after sharing): y1_0 + y1_1 + y1_2 = x0_0 + x0_1 + x0_2 + x1_0*x2_0 + x1_0*x2_1 + x1_0*x2_2 + x1_0 + x1_1*x2_0 + x1_1*x2_1 + x1_1*x2_2 + x1_1 + x1_2*x2_0 + x1_2*x2_1 + x1_2*x2_2 + x1_2
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2]]
+	Current sharing: [x0_1 + x1_1*x2_2 + x1_2*x2_1 + x1_2*x2_2 + x1_2, x0_0 + x0_2 + x1_0*x2_2 + x1_0 + x1_2*x2_0, x1_0*x2_0 + x1_0*x2_1 + x1_1*x2_0 + x1_1*x2_1 + x1_1].
+"Correctness" satisfied
+"Non-completeness" satisfied
+y1_0 = x0_1 + x1_1*x2_2 + x1_2*x2_1 + x1_2*x2_2 + x1_2
+y1_1 = x0_0 + x0_2 + x1_0*x2_2 + x1_0 + x1_2*x2_0
+y1_2 = x1_0*x2_0 + x1_0*x2_1 + x1_1*x2_0 + x1_1*x2_1 + x1_1
+------------------------------------------
+	Coordinate index: 2
+	Output variables (before and after sharing): y2 = y2_0 + y2_1 + y2_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y2 = x2
+	Target coordinate function (after sharing): y2_0 + y2_1 + y2_2 = x2_0 + x2_1 + x2_2
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2]]
+	Current sharing: [x2_1, x2_2, x2_0].
+"Correctness" satisfied
+"Non-completeness" satisfied
+y2_0 = x2_1
+y2_1 = x2_2
+y2_2 = x2_0
+
+
+==========================================================
+Start: 2023-10-26_03:17:57	Host: TL-HA-22
+SBox = (0, 3, 2, 1, 4, 7, 5, 6)
+Shares = 3 (TI order = 1)
+------------------------------------------
+	Coordinate index: 0
+	Output variables (before and after sharing): y0 = y0_0 + y0_1 + y0_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y0 = x0 + x1*x2
+	Target coordinate function (after sharing): y0_0 + y0_1 + y0_2 = x0_0 + x0_1 + x0_2 + x1_0*x2_0 + x1_0*x2_1 + x1_0*x2_2 + x1_1*x2_0 + x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_0 + x1_2*x2_1 + x1_2*x2_2
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2]]
+	Current sharing: [x0_2 + x1_1*x2_2 + x1_2*x2_1 + x1_2*x2_2, x0_0 + x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0, x0_1 + x1_0*x2_1 + x1_1*x2_0 + x1_1*x2_1].
+"Correctness" satisfied
+"Non-completeness" satisfied
+y0_0 = x0_2 + x1_1*x2_2 + x1_2*x2_1 + x1_2*x2_2
+y0_1 = x0_0 + x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0
+y0_2 = x0_1 + x1_0*x2_1 + x1_1*x2_0 + x1_1*x2_1
+------------------------------------------
+	Coordinate index: 1
+	Output variables (before and after sharing): y1 = y1_0 + y1_1 + y1_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y1 = x0 + x1*x2 + x1
+	Target coordinate function (after sharing): y1_0 + y1_1 + y1_2 = x0_0 + x0_1 + x0_2 + x1_0*x2_0 + x1_0*x2_1 + x1_0*x2_2 + x1_0 + x1_1*x2_0 + x1_1*x2_1 + x1_1*x2_2 + x1_1 + x1_2*x2_0 + x1_2*x2_1 + x1_2*x2_2 + x1_2
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2]]
+	Current sharing: [x1_1*x2_2 + x1_1 + x1_2*x2_1 + x1_2, x0_2 + x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0 + x1_2*x2_2, x0_0 + x0_1 + x1_0*x2_1 + x1_0 + x1_1*x2_0 + x1_1*x2_1].
+"Correctness" satisfied
+"Non-completeness" satisfied
+y1_0 = x1_1*x2_2 + x1_1 + x1_2*x2_1 + x1_2
+y1_1 = x0_2 + x1_0*x2_0 + x1_0*x2_2 + x1_2*x2_0 + x1_2*x2_2
+y1_2 = x0_0 + x0_1 + x1_0*x2_1 + x1_0 + x1_1*x2_0 + x1_1*x2_1
+------------------------------------------
+	Coordinate index: 2
+	Output variables (before and after sharing): y2 = y2_0 + y2_1 + y2_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y2 = x2
+	Target coordinate function (after sharing): y2_0 + y2_1 + y2_2 = x2_0 + x2_1 + x2_2
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2]]
+	Current sharing: [x2_2, x2_0, x2_1].
+"Correctness" satisfied
+"Non-completeness" satisfied
+y2_0 = x2_2
+y2_1 = x2_0
+y2_2 = x2_1
+
+
+==========================================================
+Start: 2023-10-26_03:18:50	Host: TL-HA-22
+SBox = (0, 3, 2, 1, 4, 7, 5, 6)
+Shares = 3 (TI order = 1)
+------------------------------------------
+	Coordinate index: 0
+	Output variables (before and after sharing): y0 = y0_0 + y0_1 + y0_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y0 = x0 + x1*x2
+	Target coordinate function (after sharing): y0_0 + y0_1 + y0_2 = x0_0 + x0_1 + x0_2 + x1_0*x2_0 + x1_0*x2_1 + x1_0*x2_2 + x1_1*x2_0 + x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_0 + x1_2*x2_1 + x1_2*x2_2
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2]]
+	Current sharing: [x0_2 + x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_1, x0_0 + x1_0*x2_2 + x1_2*x2_0 + x1_2*x2_2, x0_1 + x1_0*x2_0 + x1_0*x2_1 + x1_1*x2_0].
+"Correctness" satisfied
+"Non-completeness" satisfied
+y0_0 = x0_2 + x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_1
+y0_1 = x0_0 + x1_0*x2_2 + x1_2*x2_0 + x1_2*x2_2
+y0_2 = x0_1 + x1_0*x2_0 + x1_0*x2_1 + x1_1*x2_0
+------------------------------------------
+	Coordinate index: 1
+	Output variables (before and after sharing): y1 = y1_0 + y1_1 + y1_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y1 = x0 + x1*x2 + x1
+	Target coordinate function (after sharing): y1_0 + y1_1 + y1_2 = x0_0 + x0_1 + x0_2 + x1_0*x2_0 + x1_0*x2_1 + x1_0*x2_2 + x1_0 + x1_1*x2_0 + x1_1*x2_1 + x1_1*x2_2 + x1_1 + x1_2*x2_0 + x1_2*x2_1 + x1_2*x2_2 + x1_2
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2]]
+	Current sharing: [x0_1 + x1_1*x2_2 + x1_2*x2_1 + x1_2*x2_2 + x1_2, x0_0 + x0_2 + x1_0*x2_2 + x1_0 + x1_2*x2_0, x1_0*x2_0 + x1_0*x2_1 + x1_1*x2_0 + x1_1*x2_1 + x1_1].
+"Correctness" satisfied
+"Non-completeness" satisfied
+y1_0 = x0_1 + x1_1*x2_2 + x1_2*x2_1 + x1_2*x2_2 + x1_2
+y1_1 = x0_0 + x0_2 + x1_0*x2_2 + x1_0 + x1_2*x2_0
+y1_2 = x1_0*x2_0 + x1_0*x2_1 + x1_1*x2_0 + x1_1*x2_1 + x1_1
+------------------------------------------
+	Coordinate index: 2
+	Output variables (before and after sharing): y2 = y2_0 + y2_1 + y2_2
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x1_0, x1_1, x1_2, x2_0, x2_1, x2_2)
+	Target coordinate function (before sharing): y2 = x2
+	Target coordinate function (after sharing): y2_0 + y2_1 + y2_2 = x2_0 + x2_1 + x2_2
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2]]
+	Current sharing: [x2_1, x2_2, x2_0].
+"Correctness" satisfied
+"Non-completeness" satisfied
+y2_0 = x2_1
+y2_1 = x2_2
+y2_2 = x2_0
+
+
+==========================================================
+Start: 2023-10-26_03:22:36	Host: TL-HA-22
+SBox = (0, 3, 2, 1, 4, 7, 5, 6)
+Shares = 4 (TI order = 2)
+------------------------------------------
+	Coordinate index: 0
+	Output variables (before and after sharing): y0 = y0_0 + y0_1 + y0_2 + y0_3
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x0_3, x1_0, x1_1, x1_2, x1_3, x2_0, x2_1, x2_2, x2_3)
+	Target coordinate function (before sharing): y0 = x0 + x1*x2
+	Target coordinate function (after sharing): y0_0 + y0_1 + y0_2 + y0_3 = x0_0 + x0_1 + x0_2 + x0_3 + x1_0*x2_0 + x1_0*x2_1 + x1_0*x2_2 + x1_0*x2_3 + x1_1*x2_0 + x1_1*x2_1 + x1_1*x2_2 + x1_1*x2_3 + x1_2*x2_0 + x1_2*x2_1 + x1_2*x2_2 + x1_2*x2_3 + x1_3*x2_0 + x1_3*x2_1 + x1_3*x2_2 + x1_3*x2_3
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2], [x0_3, x1_3, x2_3]]
+	Current sharing: [x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_1 + x1_3*x2_2, x0_0 + x0_2 + x1_0*x2_2 + x1_2*x2_2 + x1_2*x2_3 + x1_3*x2_3, x0_3 + x1_0*x2_1 + x1_0*x2_3 + x1_1*x2_0 + x1_1*x2_3 + x1_3*x2_0 + x1_3*x2_1, x0_1 + x1_0*x2_0 + x1_2*x2_0].
+"Correctness" satisfied
+"Non-completeness" satisfied
+y0_0 = x1_1*x2_1 + x1_1*x2_2 + x1_2*x2_1 + x1_3*x2_2
+y0_1 = x0_0 + x0_2 + x1_0*x2_2 + x1_2*x2_2 + x1_2*x2_3 + x1_3*x2_3
+y0_2 = x0_3 + x1_0*x2_1 + x1_0*x2_3 + x1_1*x2_0 + x1_1*x2_3 + x1_3*x2_0 + x1_3*x2_1
+y0_3 = x0_1 + x1_0*x2_0 + x1_2*x2_0
+------------------------------------------
+	Coordinate index: 1
+	Output variables (before and after sharing): y1 = y1_0 + y1_1 + y1_2 + y1_3
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x0_3, x1_0, x1_1, x1_2, x1_3, x2_0, x2_1, x2_2, x2_3)
+	Target coordinate function (before sharing): y1 = x0 + x1*x2 + x1
+	Target coordinate function (after sharing): y1_0 + y1_1 + y1_2 + y1_3 = x0_0 + x0_1 + x0_2 + x0_3 + x1_0*x2_0 + x1_0*x2_1 + x1_0*x2_2 + x1_0*x2_3 + x1_0 + x1_1*x2_0 + x1_1*x2_1 + x1_1*x2_2 + x1_1*x2_3 + x1_1 + x1_2*x2_0 + x1_2*x2_1 + x1_2*x2_2 + x1_2*x2_3 + x1_2 + x1_3*x2_0 + x1_3*x2_1 + x1_3*x2_2 + x1_3*x2_3 + x1_3
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2], [x0_3, x1_3, x2_3]]
+	Current sharing: [x0_1 + x1_1*x2_1 + x1_1*x2_2 + x1_1*x2_3 + x1_2*x2_1 + x1_3*x2_1, x1_0*x2_0 + x1_0*x2_3 + x1_2*x2_2 + x1_2*x2_3 + x1_3*x2_0 + x1_3*x2_2 + x1_3, x0_0 + x0_3 + x1_0 + x1_3*x2_3, x0_2 + x1_0*x2_1 + x1_0*x2_2 + x1_1*x2_0 + x1_1 + x1_2*x2_0 + x1_2].
+"Correctness" satisfied
+"Non-completeness" satisfied
+y1_0 = x0_1 + x1_1*x2_1 + x1_1*x2_2 + x1_1*x2_3 + x1_2*x2_1 + x1_3*x2_1
+y1_1 = x1_0*x2_0 + x1_0*x2_3 + x1_2*x2_2 + x1_2*x2_3 + x1_3*x2_0 + x1_3*x2_2 + x1_3
+y1_2 = x0_0 + x0_3 + x1_0 + x1_3*x2_3
+y1_3 = x0_2 + x1_0*x2_1 + x1_0*x2_2 + x1_1*x2_0 + x1_1 + x1_2*x2_0 + x1_2
+------------------------------------------
+	Coordinate index: 2
+	Output variables (before and after sharing): y2 = y2_0 + y2_1 + y2_2 + y2_3
+	Input variables (after sharing): (x0_0, x0_1, x0_2, x0_3, x1_0, x1_1, x1_2, x1_3, x2_0, x2_1, x2_2, x2_3)
+	Target coordinate function (before sharing): y2 = x2
+	Target coordinate function (after sharing): y2_0 + y2_1 + y2_2 + y2_3 = x2_0 + x2_1 + x2_2 + x2_3
+---------------------
+	Conflicting: [[x0_0, x1_0, x2_0], [x0_1, x1_1, x2_1], [x0_2, x1_2, x2_2], [x0_3, x1_3, x2_3]]
+	Current sharing: [x2_1, x2_0, x2_3, x2_2].
+"Correctness" satisfied
+"Non-completeness" satisfied
+y2_0 = x2_1
+y2_1 = x2_0
+y2_2 = x2_3
+y2_3 = x2_2
+
+
