@@ -6,7 +6,7 @@ This repository contains the accompanying codes for the paper: **"From Substitut
 <!--## Directory Structure-->
 ```
 .
-│   README.md
+├───README.md
 │
 ├───with-decomposition
 │       decomposition.py
