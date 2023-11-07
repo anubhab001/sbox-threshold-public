@@ -1,6 +1,6 @@
 # Tested in Sage 9.3
 
-from enum import Flag
+
 from sage.crypto.sbox import SBox
 from sage.all import *
 
