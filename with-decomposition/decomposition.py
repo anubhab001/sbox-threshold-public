@@ -3,7 +3,7 @@
 
 from sage.crypto.sbox import SBox
 
-# Quadratic classes: 4, 12, 293, 294, 299, 300
+# Quadratic classes from Begül Bilgin's thesis: 4, 12, 293, 294, 299, 300
 CLASS_004 = SBox(map(lambda z: int(z, 16), '0123456789ABDCFE'))
 CLASS_012 = SBox(map(lambda z: int(z, 16), '0123456789CDEFAB'))
 CLASS_293 = SBox(map(lambda z: int(z, 16), '0123457689CDEFBA'))
