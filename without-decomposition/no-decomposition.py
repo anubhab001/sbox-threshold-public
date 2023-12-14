@@ -1,7 +1,7 @@
 # Tested in Sage 9.3
 
 
-from sage.crypto.sbox import SBox
+
 from sage.all import *
 
 
