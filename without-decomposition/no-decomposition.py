@@ -271,8 +271,8 @@ def wo_decomposition(sbx, shares, shuffle_y=True, shuffle_rhs=False, uniformity_
                 print (Z[i], '(zero sharing)', file=logfile)
 
             else:
-                print (Z[i], '\x1B[0m')
-                print (Z[i], file=logfile)
+                print (Z[i], '\x1B[0m\x1B[33m('+str(len(Z[i].monomials()))+')', '\x1B[0m')
+                print (Z[i], '('+str(len(Z[i].monomials()))+')', file=logfile)
 
 
 def get_go(target_sbx, ti_order, logfile, shuffle_y=True, shuffle_rhs=True, uniformity_enforced=True, uniformity_immediate_abort=True, shuffle_conflict_X=False):
