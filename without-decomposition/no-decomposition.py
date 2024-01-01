@@ -234,8 +234,8 @@ def wo_decomposition(sbx, shares, shuffle_y=True, shuffle_rhs=False, uniformity_
         assert len(X_) == size*shares
 
         
-        print ('\tTarget coordinate function (before sharing):', y, '=', (sbx.component_function(2**index).algebraic_normal_form()))
-        print ('\tTarget coordinate function (before sharing):', y, '=', (sbx.component_function(2**index).algebraic_normal_form()), file=logfile)
+        # print ('\tTarget coordinate function (before sharing):', y, '=', (sbx.component_function(2**index).algebraic_normal_form()))
+        # print ('\tTarget coordinate function (before sharing):', y, '=', (sbx.component_function(2**index).algebraic_normal_form()), file=logfile)
 
         
         for i in range(size):
